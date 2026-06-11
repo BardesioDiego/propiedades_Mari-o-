@@ -96,6 +96,7 @@ Global Styles
 html,
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #eeece5;
 }
 
 ::selection {
@@ -130,7 +131,7 @@ body {
 }
 
 .section-heading h6 {
-  color: #ee626b;
+  color: #b8955f;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -886,7 +887,7 @@ Featured Style
   margin-right: 10px;
   --bs-accordion-border-radius: 10px;
   --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
+  --bs-accordion-bg: #eeece5;
   --bs-accordion-border-color: none;
   border: none !important;
 }
@@ -899,11 +900,11 @@ Featured Style
   box-shadow: none;
   font-size: 17px;
   font-weight: 500;
-  color: #1e1e1e;
+  color: #b8955f;
 }
 
 .featured .accordion-button:not(.collapsed) {
-  color: #f35525;
+  color: #b8955f;
   background-color: #fafafa;
   outline: none;
 }
@@ -930,7 +931,7 @@ Featured Style
   display: block;
   margin-bottom: 35px;
   padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #b8955f;
 }
 
 .featured .info-table ul li:last-child {
@@ -1064,7 +1065,7 @@ Best Deal Style
 */
 
 .best-deal {
-  background-color: #fafafa;
+  background-color: #eeece5;
   padding: 100px 0px;
 }
 
