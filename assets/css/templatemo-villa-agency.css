@@ -1861,3 +1861,104 @@ body {
     margin-right: 100px;
   }
 }
+
+/* Contenedor de la Imagen principal / Carrusel */
+.propiedad-carrusel-wrapper {
+  position: relative;
+  border: 2px solid #7a42f4; /* Borde violeta temporal de tu captura */
+}
+.img-principal {
+  width: 100%;
+  display: block;
+}
+.cartel-nota {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  background-color: #e23e2a;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Botón Ver Video */
+.btn-ver-video {
+  display: inline-block;
+  background-color: #b8955f;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn-ver-video:hover {
+  background-color: #deb371;
+  color: #fff;
+}
+
+/* Tipografías de los Encabezados */
+.propiedad-direccion {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+}
+.propiedad-precio {
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 5px;
+}
+.linea-separadora {
+  border: 0;
+  height: 1px;
+  background-color: rgba(184, 149, 95, 0.3);
+  margin: 15px 0;
+}
+.propiedad-descripcion {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Sistema de grilla para los Detalles Técnicos (4 columnas) */
+.propiedad-detalles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 15px;
+  font-size: 13px;
+  color: #444;
+}
+@media (max-width: 991px) {
+  .propiedad-detalles-grid {
+    grid-template-columns: repeat(2, 1fr); /* Se adapta a 2 columnas en celulares */
+  }
+}
+
+/* Columna Derecha e imágenes multimedia */
+.bloque-multimedia-derecha img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+.mapa-enlace-wrapper {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.mapa-enlace-wrapper:hover .img-mapa {
+  opacity: 0.9;
+}
+.cartel-nota-mapa {
+  position: absolute;
+  bottom: -150px; /* Posicionado abajo tal cual tu referencia roja */
+  right: 0;
+  width: 100%;
+  background-color: #e23e2a;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  z-index: 10;
+}
