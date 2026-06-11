@@ -184,7 +184,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #f35525;
+  background-color: #b8955f;
   color: #fff;
 }
 
@@ -1169,7 +1169,7 @@ Properties Style
 }
 
 .properties .item span.category {
-  background-color: #fbd9cf;
+  background-color: #b8955f;
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
@@ -1208,7 +1208,7 @@ Properties Style
 
 .properties .item h6 {
   font-size: 20px;
-  color: #f35525;
+  color: #000000;
   margin-top: 6px;
   display: inline-block;
   float: right;
