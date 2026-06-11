@@ -1,5 +1,4 @@
 
---------------------------------------------- */
 /* 
 ---------------------------------------------
 font & reset css
@@ -151,7 +150,7 @@ body {
 }
 
 .icon-button a i {
-  background-color: #f35525;
+  background-color: #b8955f;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -163,7 +162,7 @@ body {
 }
 
 .icon-button a:hover {
-  color: #f35525;
+  color: #f9c87f;
 }
 
 .icon-button a:hover i {
@@ -297,9 +296,10 @@ Header Style
 */
 
 .sub-header {
-  background-color: #fff;
+  background-color: #eeece5;
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
+  border-bottom: 2px solid rgba(184, 149, 95, 0.2);
 }
 
 .sub-header ul li {
@@ -318,7 +318,7 @@ Header Style
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #cdcdcd;
+  background-color: #b8955f;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
@@ -328,7 +328,7 @@ Header Style
 }
 
 .sub-header ul.social-links li a:hover {
-  background-color: #f35525;
+  background-color: #deb371;
 }
 
 .sub-header ul.info li {
@@ -347,7 +347,7 @@ Header Style
 
 .sub-header ul.info li i {
   font-size: 20px;
-  color: #f35525;
+  color: #b8955f;
   margin-right: 8px;
 }
 
@@ -367,7 +367,7 @@ Header Style
 
 .header-area {
   position: relative;
-  background-color: #fff;
+  background-color: #eeece5;
   height: 100px;
   z-index: 100;
   -webkit-transition: all .5s ease 0s;
@@ -434,7 +434,7 @@ Header Style
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #1e1e1e;
+  color: #5f5f5f;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -444,7 +444,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #1e1e1e;
+  background-color: #000000;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -454,7 +454,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a i {
-  background-color: #f35525;
+  background-color: #b5894f;
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -474,16 +474,16 @@ Header Style
 }
 
 .header-area .main-nav .nav li:hover a {
-  color: #f35525;
+  color: #b5894f;
 }
 
 .header-area .main-nav .nav li a.active {
-  color: #f35525;
+  color: #b5894f;
 }
 
 
 .background-header .main-nav .nav li a.active {
-  color: #f35525;
+  color: #b5894f;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -595,6 +595,12 @@ Header Style
 
 .visible{
   display:inline !important;
+}
+
+.logo img {
+  height: 80px;    /* Ajusta este valor (en píxeles) hasta que tenga el tamaño que buscas */
+  width: auto; 
+  padding-top: 20px;    /* Esto hace que el ancho se adapte automáticamente sin deformar la imagen */
 }
 
 @media (max-width: 1200px) {
@@ -743,7 +749,7 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-01.jpg);
+  background-image: url(../images/propiedades/hero_marino_haus_propiedades_en_montevideo.png);
 }
 
 .main-banner .item-2 {
@@ -1079,7 +1085,7 @@ Best Deal Style
 }
 
 .best-deal .tabs-content .nav-tabs .nav-link.active {
-  background-color: #f35525 !important;
+  background-color: #262626 !important;
   color: #fff;
 }
 
