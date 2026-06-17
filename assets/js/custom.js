@@ -109,8 +109,46 @@
 
 })(window.jQuery);
 
-document.querySelectorAll('.img-principal').forEach(img => {
-  img.addEventListener('click', function() {
-    document.getElementById('imagenModal').src = this.src;
-  });
+document.addEventListener('DOMContentLoaded', function () {
+
+    const imagenes = document.querySelectorAll(
+        '#carruselPropiedad .img-principal'
+    );
+
+    const modalInner = document.getElementById(
+        'carouselModalInner'
+    );
+
+    // Crear automáticamente las imágenes del modal
+    imagenes.forEach((img, index) => {
+
+        const item = document.createElement('div');
+
+        item.className =
+            index === 0
+                ? 'carousel-item active'
+                : 'carousel-item';
+
+        item.innerHTML = `
+            <img src="${img.src}"
+                 class="d-block w-100"
+                 alt="Propiedad">
+        `;
+
+        modalInner.appendChild(item);
+
+        // Abrir el modal en la imagen seleccionada
+        img.addEventListener('click', function () {
+
+            const modalCarousel =
+                bootstrap.Carousel.getOrCreateInstance(
+                    document.getElementById('carouselModal')
+                );
+
+            modalCarousel.to(index);
+
+        });
+
+    });
+
 });
