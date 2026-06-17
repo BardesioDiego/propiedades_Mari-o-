@@ -2010,9 +2010,9 @@ body {
 }
 
 .img-principal {
-    width: 100%;
-    height: 516px;
-    object-fit: cover;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 .foto-360 img,
@@ -2031,4 +2031,13 @@ body {
     background-color: rgba(0,0,0,.4);
     border-radius: 50%;
     padding: 20px;
+}
+
+.img-principal {
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+.img-principal:hover {
+  opacity: 0.95;
 }

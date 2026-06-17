@@ -108,3 +108,9 @@
 
 
 })(window.jQuery);
+
+document.querySelectorAll('.img-principal').forEach(img => {
+  img.addEventListener('click', function() {
+    document.getElementById('imagenModal').src = this.src;
+  });
+});
