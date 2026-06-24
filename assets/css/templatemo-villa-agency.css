@@ -899,7 +899,16 @@ Featured Style
 .featured .accordion-button {
   box-shadow: none;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 700;
+  color: #b8955f;
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+
+
+.featured .accordion-button:not(.collapsed)::after {
+  transform: translateY(-50%) rotate(90deg);
   color: #b8955f;
 }
 
@@ -907,10 +916,6 @@ Featured Style
   color: #b8955f;
   background-color: #fafafa;
   outline: none;
-}
-
-.featured .accordion-button::after {
-  display: none;
 }
 
 .featured #headingThree {
