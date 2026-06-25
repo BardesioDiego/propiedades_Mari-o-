@@ -120,9 +120,10 @@ body {
 .section-heading h2 {
   font-size: 40px;
   font-weight: 700;
-  text-transform: capitalize;
   margin-top: 20px;
   line-height: 56px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .section-heading h2 em {
@@ -131,10 +132,11 @@ body {
 }
 
 .section-heading h6 {
-  color: #b8955f;
+  color: #262626;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
+  padding-top: 18px;
 }
 
 .icon-button a {
@@ -172,7 +174,7 @@ body {
 
 .main-button a {
   display: inline-block;
-  background-color: #1e1e1e;
+  background-color: #b8955f;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -184,7 +186,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #b8955f;
+  background-color: #a08040;
   color: #fff;
 }
 
@@ -1163,7 +1165,7 @@ Properties Style
 */
 
 .properties .item {
-  background-color: #fafafa;
+  background-color: #eeece5;
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
@@ -1223,6 +1225,7 @@ Properties Style
 .properties .item .main-button {
   text-align: center;
 }
+
 
 
 /* 
@@ -1443,6 +1446,10 @@ Footer Style
 .footer-bottom a {
   color: #fff;
   text-decoration: none;
+}
+
+.titulo_footer {
+  color: #fff;
 }
 
 
