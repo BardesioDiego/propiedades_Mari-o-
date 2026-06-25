@@ -1076,10 +1076,6 @@ Best Deal Style
   padding: 100px 0px;
 }
 
-.best-deal .tab-content img {
-  padding: 0px 45px;
-}
-
 .best-deal .tabs-content .nav-link {
   font-size: 16px;
   font-weight: 500;
@@ -1831,6 +1827,17 @@ body {
   }
   .properties .item .main-button {
     text-align: center;
+  }
+  .main-banner-title {
+    display: block;
+  }
+  @media (max-width: 767px) {
+    .main-banner-title {
+      display: none;
+    }
+  }
+  .main-banner-title {
+    text-transform: uppercase;
   }
   .properties .item ul li {
     margin-right: 10px;
