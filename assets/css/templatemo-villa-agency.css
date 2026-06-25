@@ -1980,6 +1980,58 @@ body {
     transform: scale(1.02);
 }
 
+
+.propiedad-contenido {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+}
+
+.propiedad-descripcion,
+.propiedad-destacado {
+    margin-bottom: 15px;
+}
+
+.propiedad-destacado {
+    font-size: 16px;
+}
+
+.propiedad-detalles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 30px;
+    margin: 25px 0;
+}
+
+.propiedad-detalles-grid div {
+    font-size: 15px;
+}
+
+.propiedad-detalles-grid strong {
+    font-weight: 700;
+}
+
+.propiedad-contenido h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.propiedad-contenido ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.propiedad-contenido li {
+    margin-bottom: 2px;
+}
+
+.propiedad-contenido p {
+    margin-bottom: 12px;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 991px) {
 
