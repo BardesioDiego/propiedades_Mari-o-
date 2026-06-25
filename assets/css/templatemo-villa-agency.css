@@ -1877,7 +1877,7 @@ body {
 /* CONTENEDOR GENERAL */
 #appartment {
     padding: 50px 0;
-    background: #f4f2ed;
+    background: #eeece5;
 }
 
 /* IMAGEN PRINCIPAL */
@@ -1911,6 +1911,7 @@ body {
     padding: 6px 14px;
     text-decoration: none;
     transition: 0.3s;
+    border-radius: 8px;
 }
 
 .btn-ver-video:hover {
