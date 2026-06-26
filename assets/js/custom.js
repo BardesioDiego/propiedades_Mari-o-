@@ -111,13 +111,30 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const imagenes = document.querySelectorAll(
-        '#carruselPropiedad .img-principal'
-    );
+    const mainCarouselEl = document.getElementById('carruselPropiedad');
+    const modalCarouselEl = document.getElementById('carouselModal');
+    const modalInner = document.getElementById('carouselModalInner');
 
-    const modalInner = document.getElementById(
-        'carouselModalInner'
-    );
+    if (mainCarouselEl) {
+        bootstrap.Carousel.getOrCreateInstance(mainCarouselEl, {
+            interval: 5000,
+            wrap: true,
+            ride: 'carousel'
+        });
+    }
+
+    if (modalCarouselEl) {
+        bootstrap.Carousel.getOrCreateInstance(modalCarouselEl, {
+            interval: false,
+            wrap: true
+        });
+    }
+
+    const imagenes = document.querySelectorAll('#carruselPropiedad .img-principal');
+
+    if (!modalInner || !imagenes.length) {
+        return;
+    }
 
     // Crear automáticamente las imágenes del modal
     imagenes.forEach((img, index) => {
@@ -138,15 +155,11 @@ document.addEventListener('DOMContentLoaded', function () {
         modalInner.appendChild(item);
 
         // Abrir el modal en la imagen seleccionada
-        img.addEventListener('click', function () {
+        img.addEventListener('click', function (event) {
+            event.preventDefault();
 
-            const modalCarousel =
-                bootstrap.Carousel.getOrCreateInstance(
-                    document.getElementById('carouselModal')
-                );
-
+            const modalCarousel = bootstrap.Carousel.getOrCreateInstance(modalCarouselEl);
             modalCarousel.to(index);
-
         });
 
     });
