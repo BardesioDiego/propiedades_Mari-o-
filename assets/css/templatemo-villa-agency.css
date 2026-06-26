@@ -1773,7 +1773,10 @@ body {
     line-height: 44px;
   }
   .best-deal .tabs-content ul.nav-tabs li {
-    margin: 0px 5px;
+    margin: 0px 8px 10px;
+  }
+  .best-deal .tabs-content .row > .col-lg-3:first-child {
+    margin-bottom: 20px;
   }
   .properties ul.properties-filter li a {
     font-size: 14px;
