@@ -1933,6 +1933,10 @@ body {
     gap: 20px;
 }
 
+.foto-360 {
+    overflow: hidden;
+}
+
 .foto-360 img,
 .img-mapa {
     width: 100%;
@@ -2099,6 +2103,12 @@ body {
 
     .propiedad-precio {
         font-size: 26px;
+    }
+
+    .foto-360 img {
+        height: auto;
+        object-fit: contain;
+        object-position: center;
     }
 
     .propiedad-carrusel-wrapper .carousel-item {
