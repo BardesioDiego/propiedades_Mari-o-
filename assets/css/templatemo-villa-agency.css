@@ -1933,28 +1933,20 @@ body {
     gap: 20px;
 }
 
-.foto-360 {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 4px; /* Opcional: para emprolijar bordes */
-}
-
 .foto-360 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Centra la imagen en lugar de pegarla a la izquierda */
+    object-position: center; /* Soluciona el corte pegado a la izquierda */
     display: block;
 }
 
-/* Para el mapa (si es un iframe o contenedor) */
-.img-mapa, 
-.bloque-multimedia-derecha iframe {
+.foto-360 img,
+.img-mapa {
     width: 100%;
     height: 180px;
-    border: none;
-    display: block;
+    object-fit: cover;
+    object-position: top left;
 }
 
 /* BOTÓN VIDEO */
