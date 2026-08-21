@@ -1934,11 +1934,10 @@ body {
 }
 
 .foto-360 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; /* Soluciona el corte pegado a la izquierda */
-    display: block;
+  width: 100% !important;
+  height: 250px !important; /* Mantiene la altura estándar deseada */
+  object-fit: cover !important; /* Recorta la imagen automáticamente para que no se deforme ni estire */
+  object-position: center !important; /* Enfoca el centro de la imagen al recortar */
 }
 
 .foto-360 img,
@@ -2155,23 +2154,6 @@ body {
     object-fit: cover !important;
     object-position: center !important;
     display: block !important;
-}
-
-
-/* Forzar reglas principales */
-#appartment .img-principal {
-  width: 100% !important;
-  height: 600px !important;
-  object-fit: cover !important;
-}
-
-#appartment .foto-360 img,
-#appartment .mapa-enlace-wrapper iframe {
-  width: 100% !important;
-  height: 250px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
 }
 
 .carousel-control-prev,
