@@ -2150,11 +2150,11 @@ body {
 
 .foto-360 img,
 .mapa-enlace-wrapper iframe {
-    height: 250px;
     width: 100%;
-    object-fit: cover;
-    object-position: center; /* Soluciona el corte pegado a la izquierda */
-    display: block;
+    height: 250px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
 }
 
 .carousel-control-prev,
