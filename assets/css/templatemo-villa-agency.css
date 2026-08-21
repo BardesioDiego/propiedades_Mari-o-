@@ -2157,6 +2157,23 @@ body {
     display: block !important;
 }
 
+
+/* Forzar reglas principales */
+#appartment .img-principal {
+  width: 100% !important;
+  height: 600px !important;
+  object-fit: cover !important;
+}
+
+#appartment .foto-360 img,
+#appartment .mapa-enlace-wrapper iframe {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 50px;
