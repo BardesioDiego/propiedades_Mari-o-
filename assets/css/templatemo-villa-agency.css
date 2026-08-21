@@ -1934,10 +1934,7 @@ body {
 }
 
 .foto-360 img {
-  width: 100% !important;
-  height: 250px !important; /* Mantiene la altura estándar deseada */
-  object-fit: cover !important; /* Recorta la imagen automáticamente para que no se deforme ni estire */
-  object-position: center !important; /* Enfoca el centro de la imagen al recortar */
+  width: 100%
 }
 
 .foto-360 img,
