@@ -1249,6 +1249,12 @@ Properties Style
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .properties .item h6 {
+    font-size: 16px;
+  }
+}
+
 
 
 /* 
